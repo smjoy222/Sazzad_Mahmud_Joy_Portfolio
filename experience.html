@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Experience</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Laravel default favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="https://laravel.com/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://laravel.com/img/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="https://laravel.com/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+<body>
+    
+<header>
+    <div class="logo"><span>J</span>oy</div>
+    <ul class="navlist">    
+        <li><a href="index.html">Home</a></li>
+        <li><a href="http://127.0.0.1:8000/skills">Skills</a></li>
+        <li><a href="edu.html">Education</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="achievement.html">Achievement</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <div id="menu-icon" class="bi bi-list"></div>
+</header>
+
+<!-- experience section -->
+<section id="experience" class="experience">
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="experience-content">
+        <div class="main-text">
+            <span class="animated-text">WORK EXPERIENCE</span>
+            <h2 class="glow-text">My Professional Journey</h2>
+            <div class="divider">
+                <span class="divider-line"></span>
+                <span class="divider-icon"><i class="bi bi-briefcase"></i></span>
+                <span class="divider-line"></span>
+            </div>
+        </div>
+
+        <div class="timeline-container">
+            <!-- Edit experience entries here -->
+            <div class="timeline-item left">
+                <div class="timeline-dot">
+                    <div class="pulse-effect"></div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">
+                        <i class="bi bi-calendar-event"></i>
+                        Jan 2024 - Jun 2024
+                    </div>
+                    <h3>Web Developer Intern</h3>
+                    <h4>Tech Solutions Ltd.</h4>
+                    <div class="timeline-location">
+                        <i class="bi bi-geo-alt"></i> Remote
+                    </div>
+                    <p>Worked on various web development projects using modern technologies and frameworks.</p>
+                    
+                    <div class="timeline-type">
+                        <span class="badge">Internship</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Section layout */
+        .experience { 
+            padding: 5rem 1rem;
+            background: linear-gradient(to bottom, var(--bg-color), #120418);
+            position: relative;
+            overflow: hidden;
+            min-height: 100vh;
+        }
+
+        .experience-content { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Enhanced header styling */
+        .main-text { 
+            text-align: center; 
+            margin-bottom: 5rem;
+            position: relative;
+        }
+
+        .main-text .animated-text { 
+            color: var(--text-color); 
+            font-size: 1.1rem; 
+            font-weight: 700; 
+            letter-spacing: 5px; 
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 10px;
+            position: relative;
+            animation: fadeInDown 1s both;
+        }
+
+        .main-text .glow-text { 
+            font-size: calc(var(--h2-font) + 0.5rem);
+            margin: 15px 0; 
+            color: var(--hover-color);
+            text-shadow: var(--font-neon-box-shadow);
+            animation: glow 3s infinite alternate;
+            position: relative;
+            display: inline-block;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px rgba(18, 247, 255, 0.6),
+                            0 0 20px rgba(18, 247, 255, 0.3);
+            }
+            100% {
+                text-shadow: 0 0 20px rgba(18, 247, 255, 0.8),
+                            0 0 30px rgba(18, 247, 255, 0.5),
+                            0 0 40px rgba(18, 247, 255, 0.3);
+            }
+        }
+        
+        /* Divider styling */
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1.5rem auto;
+            width: 80%;
+            max-width: 400px;
+        }
+        
+        .divider-line {
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--hover-color), transparent);
+            flex: 1;
+        }
+        
+        .divider-icon {
+            padding: 0 15px;
+            font-size: 1.2rem;
+            color: var(--hover-color);
+        }
+
+        /* Particles background */
+        .particles-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.5;
+        }
+        
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: var(--hover-color);
+            box-shadow: 0 0 10px var(--hover-color), 0 0 20px var(--hover-color);
+            animation: float 15s infinite linear;
+        }
+        
+        .particle:nth-child(1) { width: 5px; height: 5px; top: 10%; left: 10%; animation-duration: 45s; }
+        .particle:nth-child(2) { width: 8px; height: 8px; top: 20%; left: 80%; animation-duration: 30s; animation-delay: 2s; }
+        .particle:nth-child(3) { width: 6px; height: 6px; top: 50%; left: 15%; animation-duration: 40s; animation-delay: 5s; }
+        .particle:nth-child(4) { width: 4px; height: 4px; top: 70%; left: 90%; animation-duration: 35s; animation-delay: 1s; }
+        .particle:nth-child(5) { width: 7px; height: 7px; top: 85%; left: 30%; animation-duration: 50s; animation-delay: 7s; }
+        .particle:nth-child(6) { width: 5px; height: 5px; top: 40%; left: 60%; animation-duration: 45s; animation-delay: 3s; }
+        .particle:nth-child(7) { width: 4px; height: 4px; top: 15%; left: 40%; animation-duration: 55s; animation-delay: 9s; }
+        .particle:nth-child(8) { width: 6px; height: 6px; top: 90%; left: 70%; animation-duration: 40s; animation-delay: 4s; }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0) rotate(0deg);
+                opacity: 1;
+            }
+            25% {
+                transform: translateY(-30vh) translateX(20vw) rotate(90deg);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translateY(-10vh) translateX(40vw) rotate(180deg);
+                opacity: 0.6;
+            }
+            75% {
+                transform: translateY(30vh) translateX(20vw) rotate(270deg);
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(0) translateX(0) rotate(360deg);
+                opacity: 1;
+            }
+        }
+
+        /* Timeline layout with enhanced styling */
+        .timeline-container {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 0;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: var(--hover-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            box-shadow: 0 0 15px var(--hover-color);
+            border-radius: 2px;
+            animation: timelineGlow 3s infinite alternate;
+        }
+        
+        @keyframes timelineGlow {
+            0% {
+                box-shadow: 0 0 10px var(--hover-color);
+            }
+            100% {
+                box-shadow: 0 0 20px var(--hover-color), 0 0 30px rgba(18, 247, 255, 0.5);
+            }
+        }
+
+        .timeline-item {
+            padding: 30px 50px;
+            position: relative;
+            width: 50%;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s cubic-bezier(0.17, 0.85, 0.438, 0.99);
+        }
+        
+        .timeline-item.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Initial state for animation */
+        .timeline-item {
+            animation: none;
+        }
+
+        .timeline-item.left {
+            left: 0;
+        }
+
+        .timeline-item.right {
+            left: 50%;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(18, 247, 255, 0.1);
+            top: 30px;
+            border: 2px solid rgba(18, 247, 255, 0.3);
+            box-shadow: 0 0 15px rgba(18, 247, 255, 0.3);
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        
+        .timeline-dot::before {
+            content: '';
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            border-radius: 50%;
+            border: 1px dashed var(--hover-color);
+            animation: spin 20s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .pulse-effect {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            background: var(--hover-color);
+            box-shadow: 0 0 15px var(--hover-color), 0 0 20px var(--hover-color);
+            animation: pulse 2s infinite alternate;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+        }
+
+        .timeline-item.left .timeline-dot {
+            right: -11px;
+        }
+
+        .timeline-item.right .timeline-dot {
+            left: -11px;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background: rgba(18, 20, 26, 0.8);
+            border: 2px solid rgba(18, 247, 255, 0.3);
+            position: relative;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(18, 247, 255, 0.2);
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 90%; /* Making cards a little smaller */
+            overflow: hidden;
+        }
+        
+        .timeline-item.left .timeline-content {
+            margin-left: auto;
+        }
+        
+        .timeline-item.right .timeline-content {
+            margin-right: auto;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-8px) perspective(800px) rotateX(5deg);
+            box-shadow: 0 15px 25px rgba(18, 247, 255, 0.4);
+            background: linear-gradient(135deg, rgba(18, 20, 26, 0.9) 0%, rgba(18, 247, 255, 0.15) 100%);
+            border-color: rgba(18, 247, 255, 1);
+        }
+        
+        .timeline-content:hover::before {
+            transform: translateX(100%);
+        }
+
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            top: 28px;
+            width: 25px;
+            height: 25px;
+            border-top: 2px solid var(--hover-color);
+            border-right: 2px solid var(--hover-color);
+            background-color: rgba(18, 20, 26, 0.8);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-content:hover::before {
+            border-color: rgba(18, 247, 255, 1);
+        }
+
+        .timeline-item.left .timeline-content::before {
+            right: -15px;
+            transform: rotate(45deg);
+        }
+
+        .timeline-item.right .timeline-content::before {
+            left: -15px;
+            transform: rotate(-135deg);
+        }
+
+        /* Achievement-style header with icon */
+        .timeline-date {
+            color: var(--hover-color);
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 5px 8px;
+            background: rgba(18, 247, 255, 0.05);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(18, 247, 255, 0.1);
+        }
+        
+        .timeline-content:hover .timeline-date {
+            background: rgba(18, 247, 255, 0.1);
+            border-color: rgba(18, 247, 255, 0.2);
+        }
+        
+        .present-tag {
+            color: var(--hover-color);
+            font-weight: 500;
+        }
+
+        .timeline-content h3 {
+            margin: 0 0 10px;
+            font-size: 1.3rem;
+            color: var(--hover-color);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            position: relative;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-content h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            height: 2px;
+            width: 50px;
+            background: linear-gradient(to right, var(--hover-color), transparent);
+            transition: width 0.3s ease;
+        }
+        
+        .timeline-content:hover h3::after {
+            width: 100%;
+        }
+        
+        .timeline-content:hover h3 {
+            text-shadow: 0 0 8px rgba(18, 247, 255, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .timeline-content h4 {
+            margin: 0 0 10px;
+            color: var(--hover-color);
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .timeline-content h4::before {
+            content: '\F3ED'; /* Bootstrap icon code for building */
+            font-family: "bootstrap-icons";
+            font-size: 0.9rem;
+            color: var(--hover-color);
+        }
+
+        .timeline-location {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-color);
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+            background: rgba(18, 20, 26, 0.3);
+            padding: 5px 8px;
+            border-radius: 8px;
+            border: 1px solid rgba(18, 247, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-content:hover .timeline-location {
+            background: rgba(18, 247, 255, 0.05);
+        }
+
+        .timeline-content p {
+            margin: 10px 0 15px;
+            color: var(--text-color);
+            line-height: 1.6;
+            font-size: 0.95rem;
+            padding: 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-content:hover p {
+            background: rgba(18, 20, 26, 0.3);
+            padding: 8px;
+        }
+        
+        .timeline-type {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .badge {
+            background: rgba(18, 247, 255, 0.1);
+            border: 1px solid var(--hover-color);
+            border-radius: 20px;
+            padding: 5px 14px;
+            font-size: 0.8rem;
+            color: var(--hover-color);
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(18, 247, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-content:hover .badge {
+            background: rgba(18, 247, 255, 0.15);
+            box-shadow: 0 0 15px rgba(18, 247, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        /* Enhanced empty state styling */
+        .empty-state {
+            text-align: center;
+            padding: 50px 30px;
+            background: rgba(18, 20, 26, 0.6);
+            border: 2px solid var(--hover-color);
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(18, 247, 255, 0.3);
+            max-width: 600px;
+            margin: 40px auto;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 1s ease-out;
+            backdrop-filter: blur(10px);
+        }
+        
+        .empty-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, rgba(18, 247, 255, 0.1), rgba(18, 247, 255, 0.05));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border: 2px solid rgba(18, 247, 255, 0.3);
+        }
+        
+        .empty-icon::before {
+            content: '';
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            border-radius: 50%;
+            border: 2px dashed var(--hover-color);
+            animation: spin 20s linear infinite;
+        }
+        
+        .empty-icon i {
+            font-size: 3.5rem;
+            color: var(--hover-color);
+            animation: pulse 2s infinite alternate;
+        }
+        
+        .empty-state h3 {
+            color: white;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .empty-state p {
+            color: #d5d5d5;
+            font-size: 1.1rem;
+            max-width: 400px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+        
+        .tech-decoration {
+            margin-top: 30px;
+        }
+        
+        .code-line {
+            height: 4px;
+            background: linear-gradient(to right, transparent, var(--hover-color), transparent);
+            margin: 10px auto;
+            width: 60%;
+            opacity: 0.5;
+        }
+        
+        .code-line:nth-child(1) { width: 40%; }
+        .code-line:nth-child(2) { width: 60%; }
+        .code-line:nth-child(3) { width: 30%; }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive layout */
+        @media screen and (max-width: 768px) {
+            .timeline-container::after {
+                left: 40px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+                animation: fadeIn 0.8s both;
+                animation-delay: calc(var(--i, 0) * 0.15s);
+            }
+            
+            .timeline-item.right {
+                left: 0;
+            }
+            
+            .timeline-item.left .timeline-dot,
+            .timeline-item.right .timeline-dot {
+                left: 30px;
+            }
+            
+            .timeline-item.left .timeline-content::before,
+            .timeline-item.right .timeline-content::before {
+                left: -15px;
+                transform: rotate(-135deg);
+                border-color: var(--hover-color);
+            }
+            
+            .main-text .glow-text {
+                font-size: calc(var(--h2-font) - 0.2rem);
+            }
+            
+            .divider {
+                width: 95%;
+            }
+        }
+        
+        /* Animations for smaller screens */
+        @media screen and (max-width: 480px) {
+            .experience {
+                padding: 4rem 0.75rem;
+            }
+            
+            .timeline-item {
+                padding-left: 60px;
+                padding-right: 15px;
+            }
+            
+            .timeline-content {
+                padding: 20px;
+            }
+            
+            .empty-state {
+                padding: 40px 20px;
+            }
+            
+            .main-text {
+                margin-bottom: 3rem;
+            }
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Apply staggered animation to timeline items
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            timelineItems.forEach((item, index) => {
+                // Reset any inline animation delays
+                item.style.animationDelay = `${index * 0.2}s`;
+                
+                // Create observer for items
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animate');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.2 });
+                
+                observer.observe(item);
+            });
+            
+            // Add hover animations
+            timelineItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.querySelector('.timeline-dot').style.transform = 'scale(1.1)';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.querySelector('.timeline-dot').style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
