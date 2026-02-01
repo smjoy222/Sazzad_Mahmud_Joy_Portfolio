@@ -12,7 +12,7 @@
         .projects {
             position: relative;
             min-height: 100vh;
-            padding: 120px 8% 70px;
+            padding: 60px 8% 70px;
             background: linear-gradient(to bottom, var(--bg-color), #120418);
             overflow: hidden;
         }
@@ -286,19 +286,19 @@
         .code-line:nth-child(3) { width: 60px; }
         
         @media (max-width: 992px) {
-            .projects { padding: 100px 5% 50px; }
+            .projects { padding: 60px 5% 50px; }
             .glow-text { font-size: 36px; }
             .projects-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
         }
         
         @media (max-width: 768px) {
-            .projects { padding: 80px 4% 40px; }
+            .projects { padding: 2.5rem 1rem 5rem; }
             .glow-text { font-size: 30px; }
             .animated-text { font-size: 14px; }
         }
         
         @media (max-width: 480px) {
-            .projects { padding: 70px 3% 30px; }
+            .projects { padding: 2.5rem 1rem 5rem; }
             .projects-grid { grid-template-columns: 1fr; }
         }
     </style>
@@ -334,6 +334,9 @@
                 <li><a href="about.html">About</a></li>
             </ul>
         </li>
+        </ul>
+        <div id="menu-icon" class="bi bi-list"></div>
+</header>
 
     <!-- projects section -->
     <section id="projects" class="projects">

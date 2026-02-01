@@ -38,6 +38,10 @@ header{
   justify-content: space-between;
   width: 100%;
   padding: 20px 10%;
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color);
+  z-index: 1000;
 }
 
 .logo{
