@@ -125,3 +125,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 100);
     }
 });
+
+// Toggle mobile menu
+function toggleMobileMenu(event) {
+    event.preventDefault();
+    const submenu = event.target.closest('.mobile-more-item').querySelector('.mobile-submenu');
+    submenu.classList.toggle('active');
+}

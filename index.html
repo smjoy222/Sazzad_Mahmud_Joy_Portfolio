@@ -17,13 +17,23 @@
 <header>
   <a class="logo" href="index.html"><span>J</span>oy</a>
 <ul class="navlist">    
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#skills" class="scroll-link">Skills</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="experience.html">Experience</a></li>
+        <li class="hide-on-mobile"><a href="index.html">Home</a></li>
+        <li class="hide-on-mobile"><a href="#skills" class="scroll-link">Skills</a></li>
+        <li class="hide-on-mobile"><a href="education.html">Education</a></li>
+        <li class="hide-on-mobile"><a href="experience.html">Experience</a></li>
         <li><a href="achievement.html">Achievement</a></li>
         <li><a href="project.html">Project</a></li>
-        <li><a href="about.html">About</a></li>
+        <li class="hide-on-mobile"><a href="about.html">About</a></li>
+        <li class="show-on-mobile mobile-more-item">
+            <a href="#" class="more-toggle" onclick="toggleMobileMenu(event)">More <i class="bi bi-three-dots-vertical"></i></a>
+            <ul class="mobile-submenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#skills" class="scroll-link">Skills</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </li>
     </ul>
     <div id="menu-icon" class="bi bi-list"></div>
 </header>
@@ -37,13 +47,12 @@
           <h3>
             
             <span class="word">Student</span>
-            <span class="word">UI/UX&nbsp;Designer</span>
+            <span class="word">Full&nbsp;Stack&nbsp;Developer</span>
             <span class="word">Early-Career&nbsp;Researcher</span>
-            
             <span class="word">Frontend&nbsp;Developer</span>
           </h3>
         </div>
-        <p>I'm a web developer with a passion for creating beautiful and functional websites. I love coding and I'm always eager to learn new technologies.</p>
+        <p>CSE graduate passionate about Deep Learning & Data Science. Learning MERN stack web development to build modern, scalable applications. Always eager to learn and apply research knowledge to real-world problems.</p>
 
         <div class="info-box">
           <div class="email-info">
@@ -53,8 +62,16 @@
         </div>
 
         <div class="btn-box">
-          <a href="#" class="btn">Download CV</a>
+          <a onclick="document.getElementById('cvModal').style.display='flex'; return false;" href="#" class="btn">Download CV</a>
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=smjoy222@gmail.com" target="_blank" rel="noopener noreferrer" class="btn">Contact Me</a>
+        </div>
+
+        <!-- CV Modal -->
+        <div id="cvModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; z-index: 1000;">
+          <div style="position: relative; width: 90%; height: 90%; background: white; border-radius: 8px; overflow: hidden;">
+            <button onclick="document.getElementById('cvModal').style.display='none';" style="position: absolute; top: 10px; right: 10px; background: #ff6b6b; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; z-index: 1001;">Close</button>
+            <embed src="assets/pdf/Sazzad Mahmud Joy resume.pdf" type="application/pdf" width="100%" height="100%" />
+          </div>
         </div>
 
         <div class="social-icons">
