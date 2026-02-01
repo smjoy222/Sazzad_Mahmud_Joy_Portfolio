@@ -132,3 +132,13 @@ function toggleMobileMenu(event) {
     const submenu = event.target.closest('.mobile-more-item').querySelector('.mobile-submenu');
     submenu.classList.toggle('active');
 }
+
+// Close mobile submenu when clicking outside
+document.addEventListener('click', (e) => {
+    const mobileMoreItem = document.querySelector('.mobile-more-item');
+    const submenu = document.querySelector('.mobile-submenu.active');
+    
+    if (submenu && !mobileMoreItem.contains(e.target)) {
+        submenu.classList.remove('active');
+    }
+});
