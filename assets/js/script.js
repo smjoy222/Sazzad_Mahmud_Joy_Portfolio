@@ -142,3 +142,11 @@ document.addEventListener('click', (e) => {
         submenu.classList.remove('active');
     }
 });
+
+// Close mobile submenu when scrolling
+window.addEventListener('scroll', () => {
+    const submenu = document.querySelector('.mobile-submenu.active');
+    if (submenu) {
+        submenu.classList.remove('active');
+    }
+});
