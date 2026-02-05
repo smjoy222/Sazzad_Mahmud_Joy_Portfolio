@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JOY-Personal Portfolio | Skills</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JOY Branding Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <link rel="alternate icon" href="assets/images/favicon.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    
+<header>
+    <a class="logo" href="index.html"><span>J</span>oy</a>
+    <ul class="navlist">    
+        <li class="hide-on-mobile"><a href="index.html">Home</a></li>
+        <li class="hide-on-mobile"><a href="skills.html">Skills Details</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="achievement.html">Achievement</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li class="hide-on-mobile"><a href="education.html">Education</a></li>
+        <li class="hide-on-mobile"><a href="experience.html">Experience</a></li>
+        <li class="hide-on-mobile"><a href="about.html">About</a></li>
+        <li class="show-on-mobile mobile-more-item">
+            <a href="#" class="more-toggle" onclick="toggleMobileMenu(event)">More <i class="bi bi-three-dots-vertical"></i></a>
+            <ul class="mobile-submenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills Details</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="achievement.html">Achievement</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </li>
+    </ul>
+    <div id="menu-icon" class="bi bi-list"></div>
+</header>
+
+<!-- Skills Section -->
+<section id="skills-page" class="achievements">
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class="achievements-content">
+        <div class="main-text">
+            <span class="animated-text">TECHNICAL EXPERTISE</span>
+            <h2 class="glow-text">My Skills & Technologies</h2>
+            <div class="divider">
+                <span class="divider-line"></span>
+                <span class="divider-icon"><i class="bi bi-code-slash"></i></span>
+                <span class="divider-line"></span>
+            </div>
+        </div>
+
+        <!-- Skills Summary Stats -->
+        <div class="research-stats" style="margin-bottom: 50px; text-align: center;">
+            <div class="stats-container" style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap;">
+                <div class="stat-item">
+                    <h3 style="color: #12f7ff; font-size: 2.5rem; margin-bottom: 10px;">5+</h3>
+                    <p style="font-size: 1.1rem;">Programming Languages</p>
+                </div>
+                <div class="stat-item">
+                    <h3 style="color: #12f7ff; font-size: 2.5rem; margin-bottom: 10px;">10+</h3>
+                    <p style="font-size: 1.1rem;">Technologies</p>
+                </div>
+                <div class="stat-item">
+                    <h3 style="color: #12f7ff; font-size: 2.5rem; margin-bottom: 10px;">5+</h3>
+                    <p style="font-size: 1.1rem;">Development Tools</p>
+                </div>
+                <div class="stat-item">
+                    <h3 style="color: #12f7ff; font-size: 2.5rem; margin-bottom: 10px;">3</h3>
+                    <p style="font-size: 1.1rem;">Languages Spoken</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Skills Grid -->
+        <div class="achievements-grid" style="gap: 3rem;">
+            
+            <!-- Frontend Development -->
+            <div class="achievement-card">
+                <div class="achievement-header">
+                    <div class="achievement-icon">
+                        <i class="bi bi-palette"></i>
+                    </div>
+                    <h3 class="achievement-title">Frontend Development</h3>
+                </div>
+                <div class="achievement-details">
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> HTML</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> CSS</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Bootstrap</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Tailwind CSS</span>
+                    </div>
+                    <p>Proficient in building responsive, modern, and user-friendly web interfaces with clean code and best practices.</p>
+                </div>
+            </div>
+
+            <!-- Backend Development -->
+            <div class="achievement-card">
+                <div class="achievement-header">
+                    <div class="achievement-icon">
+                        <i class="bi bi-server"></i>
+                    </div>
+                    <h3 class="achievement-title">Backend Development</h3>
+                </div>
+                <div class="achievement-details">
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> PHP</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> REST API</span>
+                    </div>
+                    <p>Experience in server-side programming, API development, and backend architecture design.</p>
+                </div>
+            </div>
+
+            <!-- Database Management -->
+            <div class="achievement-card">
+                <div class="achievement-header">
+                    <div class="achievement-icon">
+                        <i class="bi bi-database"></i>
+                    </div>
+                    <h3 class="achievement-title">Database Management</h3>
+                </div>
+                <div class="achievement-details">
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> MySQL</span>
+                    </div>
+                    <p>Skilled in database design, optimization, query writing, and data management with MySQL.</p>
+                </div>
+            </div>
+
+            <!-- Machine Learning -->
+            <div class="achievement-card">
+                <div class="achievement-header">
+                    <div class="achievement-icon">
+                        <i class="bi bi-robot"></i>
+                    </div>
+                    <h3 class="achievement-title">Machine Learning</h3>
+                </div>
+                <div class="achievement-details">
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Supervised Learning</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Unsupervised Learning</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Hyperparameter Tuning</span>
+                    </div>
+                    <p>Experience in building and optimizing machine learning models for various problem domains.</p>
+                </div>
+            </div>
+
+            <!-- Deep Learning -->
+            <div class="achievement-card">
+                <div class="achievement-header">
+                    <div class="achievement-icon">
+                        <i class="bi bi-cpu"></i>
+                    </div>
+                    <h3 class="achievement-title">Deep Learning</h3>
+                </div>
+                <div class="achievement-details">
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> CNN</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Transfer Learning</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Data Preprocessing</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Image Classification</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Feature Extraction</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Model Training</span>
+                    </div>
+                    <p>Strong foundation in deep learning architectures, particularly in computer vision and image classification tasks.</p>
+                </div>
+            </div>
+
+            <!-- Libraries & Frameworks -->
+            <div class="achievement-card">
+                <div class="achievement-header">
+                    <div class="achievement-icon">
+                        <i class="bi bi-box-seam"></i>
+                    </div>
+                    <h3 class="achievement-title">Libraries & Frameworks</h3>
+                </div>
+                <div class="achievement-details">
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> TensorFlow</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Pandas</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> NumPy</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Seaborn</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Matplotlib</span>
+                    </div>
+                    <p>Proficient in Python data science and deep learning libraries for data analysis, visualization, and model development.</p>
+                </div>
+            </div>
+
+            <!-- Programming Languages -->
+            <div class="achievement-card">
+                <div class="achievement-header">
+                    <div class="achievement-icon">
+                        <i class="bi bi-filetype-py"></i>
+                    </div>
+                    <h3 class="achievement-title">Programming Languages</h3>
+                </div>
+                <div class="achievement-details">
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Python</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> C</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> PHP</span>
+                    </div>
+                    <p>Strong programming foundation in multiple languages for diverse application development.</p>
+                </div>
+            </div>
+
+            <!-- Development Tools -->
+            <div class="achievement-card">
+                <div class="achievement-header">
+                    <div class="achievement-icon">
+                        <i class="bi bi-tools"></i>
+                    </div>
+                    <h3 class="achievement-title">Development Tools</h3>
+                </div>
+                <div class="achievement-details">
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Git</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> GitHub</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> MS Word</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> MS Excel</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> MS PowerPoint</span>
+                    </div>
+                    <p>Proficient with version control, collaboration tools, and productivity software.</p>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="achievement-card">
+                <div class="achievement-header">
+                    <div class="achievement-icon">
+                        <i class="bi bi-people"></i>
+                    </div>
+                    <h3 class="achievement-title">Soft Skills</h3>
+                </div>
+                <div class="achievement-details">
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Leadership</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Communication</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Presentation</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Teamwork</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Fast Learner</span>
+                    </div>
+                    <p>Strong interpersonal skills with ability to lead teams, communicate effectively, and adapt quickly to new technologies.</p>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="achievement-card">
+                <div class="achievement-header">
+                    <div class="achievement-icon">
+                        <i class="bi bi-translate"></i>
+                    </div>
+                    <h3 class="achievement-title">Languages</h3>
+                </div>
+                <div class="achievement-details">
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Bangla (Native)</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> English (Advanced)</span>
+                        <span class="skill-tag"><i class="bi bi-check-circle-fill"></i> Hindi (Basic)</span>
+                    </div>
+                    <p>Multilingual communication abilities for diverse professional environments.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.skill-tag {
+    background: linear-gradient(135deg, rgba(18, 247, 255, 0.1), rgba(18, 247, 255, 0.05));
+    border: 1px solid rgba(18, 247, 255, 0.3);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #12f7ff;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-tag::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(18, 247, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.5s, height 0.5s;
+}
+
+.skill-tag:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.skill-tag:hover {
+    background: linear-gradient(135deg, rgba(18, 247, 255, 0.3), rgba(18, 247, 255, 0.15));
+    border-color: #12f7ff;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(18, 247, 255, 0.4);
+}
+
+.skill-tag i {
+    margin-right: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Enhanced Achievement Card Styling */
+.achievement-card {
+    opacity: 0;
+    animation: cardAppear 0.5s ease-out forwards;
+    animation-delay: calc(var(--index, 0) * 0.1s);
+    margin-bottom: 1.5rem;
+}
+
+.achievement-card:nth-child(1) { --index: 1; }
+.achievement-card:nth-child(2) { --index: 2; }
+.achievement-card:nth-child(3) { --index: 3; }
+.achievement-card:nth-child(4) { --index: 4; }
+.achievement-card:nth-child(5) { --index: 5; }
+.achievement-card:nth-child(6) { --index: 6; }
+.achievement-card:nth-child(7) { --index: 7; }
+.achievement-card:nth-child(8) { --index: 8; }
+.achievement-card:nth-child(9) { --index: 9; }
+.achievement-card:nth-child(10) { --index: 10; }
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.achievement-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, transparent 0%, rgba(18, 247, 255, 0.1) 100%);
+    z-index: -1;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(18, 247, 255, 0.4);
+    background: linear-gradient(135deg, rgba(18, 20, 26, 0.9) 0%, rgba(18, 247, 255, 0.15) 100%);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.achievement-card:hover::before {
+    opacity: 1;
+}
+
+.achievement-icon {
+    position: relative;
+    z-index: 1;
+}
+
+.achievement-icon i {
+    /* Removed pulse animation */
+}
+
+/* Removed spin animation */
+
+.achievement-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.achievement-icon {
+    flex: 0 0 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(18, 247, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--hover-color);
+    border: 2px solid rgba(18, 247, 255, 0.2);
+    box-shadow: 0 0 15px rgba(18, 247, 255, 0.3);
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.achievement-icon i {
+    font-size: 2.5rem;
+    color: var(--hover-color);
+}
+
+.achievement-details {
+    background: rgba(18, 20, 26, 0.5);
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid rgba(18, 247, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.achievement-card:hover .achievement-details {
+    background: rgba(18, 20, 26, 0.7);
+    border: 1px solid rgba(18, 247, 255, 0.3);
+    box-shadow: 0 5px 15px rgba(18, 247, 255, 0.15);
+}
+
+.achievement-title {
+    position: relative;
+    display: inline-block;
+}
+
+.achievement-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 50px;
+    background: linear-gradient(to right, var(--hover-color), transparent);
+    transition: width 0.3s ease;
+}
+
+.achievement-card:hover .achievement-title::after {
+    width: 100%;
+}
+
+/* Stats Section Enhancement */
+.research-stats {
+    animation: fadeInUp 0.8s ease-out 0.5s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stat-item {
+    transition: all 0.3s ease;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(18, 20, 26, 0.5);
+    border: 1px solid rgba(18, 247, 255, 0.1);
+}
+
+.stat-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    background: rgba(18, 20, 26, 0.8);
+    border-color: rgba(18, 247, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(18, 247, 255, 0.3);
+}
+
+.stat-item h3 {
+    animation: countUp 2s ease-out;
+    text-shadow: 0 0 20px rgba(18, 247, 255, 0.5);
+}
+
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-item h3 {
+    animation: countUp 2s ease-out;
+}
+
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Mobile View: 2x2 Grid Layout for Stats */
+@media (max-width: 768px) {
+    .stats-container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 20px !important;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .stat-item {
+        padding: 15px;
+    }
+    
+    .stat-item h3 {
+        font-size: 2rem !important;
+    }
+    
+    .stat-item p {
+        font-size: 0.9rem !important;
+    }
+}
+</style>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
